@@ -1,0 +1,25 @@
+create database repo;
+use repo;
+
+create table Depart(
+deptID int primary key not null,
+deptName varchar(50) not null
+);
+create table Employ(
+empID int primary key ,
+empName varchar(50),
+dId int ,
+foreign key(dId) references Depart(deptID) on delete cascade
+);
+insert into Depart(deptID, deptName) values('1','testing')
+,('2','devop');
+insert into Employ(empID, empName, dId) values('1','satyasai','1')
+,('2','rahul','2');
+drop table Depart;
+drop table Employ;
+select * from depart;
+select * from Employ;
+select * from Employ where DID=8;
+
+desc depart;
+desc Employ;
