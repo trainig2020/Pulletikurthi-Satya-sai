@@ -1,0 +1,6 @@
+com\Controller\Address.class
+com\Controller\HobbyValidator.class
+com\Controller\StudentNameEditor.class
+com\Controller\Student.class
+com\Controller\StudentAdmissionController.class
+com\Controller\IsValidHobby.class
